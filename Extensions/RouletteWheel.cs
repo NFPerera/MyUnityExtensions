@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace _Main.Scripts.DevelopmentUtilities.Extensions
+namespace Extensions
 {
     public class RouletteWheel<T>
     {

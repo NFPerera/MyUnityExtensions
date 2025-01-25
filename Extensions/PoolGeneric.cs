@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace _Main.Scripts.DevelopmentUtilities.Extensions
+namespace Extensions
 {
     public class PoolGeneric<T> where T : Object
     {
@@ -16,7 +16,7 @@ namespace _Main.Scripts.DevelopmentUtilities.Extensions
             m_parent = p_transformParent;
         }
 
-        public T GetorCreate()
+        public T GetOrCreate()
         {
             if (m_availables.Count > 0)
             {
@@ -41,6 +41,7 @@ namespace _Main.Scripts.DevelopmentUtilities.Extensions
             if (!m_inUse.Contains(p_poolEntry)) 
                 return;
             
+
             m_inUse.Remove(p_poolEntry);
             m_availables.Enqueue(p_poolEntry);
         }

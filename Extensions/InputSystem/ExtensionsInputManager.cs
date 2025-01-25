@@ -1,8 +1,9 @@
 using System;
+using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace _Main.Scripts.DevelopmentUtilities
+namespace Extensions.InputSystem
 {
     public class MyInputManager : MonoBehaviour
     {

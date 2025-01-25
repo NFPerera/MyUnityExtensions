@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Runtime.Serialization;
 using UnityEngine;
 
-namespace _Main.Scripts.DevelopmentUtilities.DictionaryUtilities
+namespace Extensions.IENumerableExtensions.DictionaryUtilities
 {
 	public abstract class SerializableHashSetBase
 	{

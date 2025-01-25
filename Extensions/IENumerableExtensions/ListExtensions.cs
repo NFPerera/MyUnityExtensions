@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace _Main.Scripts.DevelopmentUtilities.Extensions
+namespace Extensions.IENumerableExtensions
 {
     public static class ListExtensions
     {
@@ -17,6 +17,11 @@ namespace _Main.Scripts.DevelopmentUtilities.Extensions
             l_unmatchedList.AddRange(p_list2.Except(p_list1));
 
             return l_unmatchedList;
+        }
+
+        public static void RemoveLast<T>(this List<T> p_baseList)
+        {
+            p_baseList.Remove(p_baseList[^1]);
         }
     }
 }

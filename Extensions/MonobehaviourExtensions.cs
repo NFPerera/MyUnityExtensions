@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-namespace _Main.Scripts.DevelopmentUtilities.Extensions
+namespace Extensions
 {
     public static class MonobehaviourExtensions
     {
